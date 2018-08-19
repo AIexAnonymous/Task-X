@@ -12,6 +12,7 @@ This is the last data base homework.
 选做加分要求:
 -------
 1、从数据库中取出基础要求中存入的数据,用python简易分析做成网站（即打通双向)，做成dashboard样式者更佳
+
 2、适当增加网站的美观、趣味性
 
 -------
