@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>问题合集</title>
+</head>
+<body>
+  <p>为卿采莲兮，涉水；为卿夺旗兮，长战，为卿遥望兮，辞宫阙，为卿白发兮，缓缓歌</p>
+  <p>{{卿}}</p>
+</body>
+<form action="answer" method="POST">
+    {%csrf_token%}
+    {{问题一}} <input type='text' name='question1' >
+    {{问题二}} <input type='text' name='question2' >
+    {{问题三}} <input type='text' name='question3' >
+    <input type="submit" value="提交"/>
+</form>
+</html>
