@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {margin:25px;}
+{
+	background-color: #ffffff;
+}
+h1
+{
+	color:orange;
+	text-align:center;
+}
+p
+{
+	font-family:"Times New Roman";
+	font-size:20px;
+}
+div.polaroid
+{
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+div.container
+{
+  text-align: center;
+  padding: 10px 20px;
+}
+</style>
+<head>
+	<meta charset="utf-8">
+	<title>问卷调查(Designed by Alex.J.Lee)</title>
+</head>
+<h1>产品意向调查</h1>
+
+<body>
+<h2>STEP1:基本信息</h2>
+<form action="OK" method="post">
+    {% csrf_token %}
+    姓名: <input type="text" name="user"><br>
+    性别: <input type="radio" name="sex" value="male">Male
+          <input type="radio" name="sex" value="female">Female<br>
+    <h2>STEP2:问卷信息</h2>
+    <h3>问题1：</h3>
+    <div class="polaroid">
+        <img src="image/Q1.jpeg" style="width:100%">
+        <div class="container">
+            <p>问题1：你喜欢极简设计吗？</p>
+            <input type="radio" name="Q1" value="A">很喜欢
+            <input type="radio" name="Q1" value="B">较喜欢
+            <input type="radio" name="Q1" value="C">不喜欢<br>
+        </div>
+    </div>
+    <h3>问题2：</h3>
+    <div class="polaroid">
+        <img src="image/Q2.jpeg" style="width:100%">
+        <div class="container">
+            <p>问题2：你接受高消费的科技产品吗？</p>
+            <input type="radio" name="Q2" value="A">很接受
+            <input type="radio" name="Q2" value="B">较接受
+            <input type="radio" name="Q2" value="C">不接受<br>
+        </div>
+    </div>
+    <h3>问题3：</h3>
+    <div class="polaroid">
+        <img src="image/Q3.jpeg" style="width:100%">
+        <div class="container">
+            <p>问题3：你愿意使用多少钱购买科技产品呢？</p>
+            <input type="radio" name="Q3" value="A">5000以上
+            <input type="radio" name="Q3" value="B">3000-5000
+            <input type="radio" name="Q3" value="C">3000以下<br>
+        </div>
+    </div>
+    <h3>问题4：</h3>
+    <div class="polaroid">
+        <img src="image/Q4.jpeg" style="width:100%">
+        <div class="container">
+            <p>问题4：你经常更换智能电子产品吗？</p>
+            <input type="radio" name="Q4" value="A">经常
+            <input type="radio" name="Q4" value="B">偶尔
+            <input type="radio" name="Q4" value="C">很少<br>
+        </div>
+    </div>
+    <h2>STEP3:提交信息</h2>
+    <input type="submit" value="提交">
+    <input type="reset" value="重置">
+</form>
+
+<div id="footer" style="background-color:#ffffff;clear:both;text-align:center;">
+版权 © Alex.J.Lee All Rights Rserved by 威海嘉豪科技有限公司 iSight Co.,Ltd (2017-2020)</div>
+
+</body>
+
+</html>

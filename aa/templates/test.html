@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>问卷调查(Designed by Alex.J.Lee)</title>
+</head>
+<h1>产品意向调查</h1>
+
+<body>
+<h2>STEP1:基本信息</h2>
+<form action="test" method="post">
+    {% csrf_token %}
+    姓名: <input type="text" name="user"><br>
+    性别: <input type="radio" name="sex" value="male">Male
+          <input type="radio" name="sex" value="female">Female<br>
+    <input type="submit" value="提交">
+    <input type="reset" value="重置">
+
+</form>
+
+<div id="footer" style="background-color:#ffffff;clear:both;text-align:center;">
+版权 © Alex.J.Lee All Rights Rserved by 威海嘉豪科技有限公司 iSight Co.,Ltd (2017-2020)</div>
+
+</body>
+
+</html>
